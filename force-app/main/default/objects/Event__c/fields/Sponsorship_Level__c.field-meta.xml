@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sponsorship_Level__c</fullName>
+    <label>Sponsorship Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Sponsored</fullName>
+                <default>false</default>
+                <label>Not Sponsored</label>
+            </value>
+            <value>
+                <fullName>Partially Sponsored</fullName>
+                <default>false</default>
+                <label>Partially Sponsored</label>
+            </value>
+            <value>
+                <fullName>Fully Sponsored</fullName>
+                <default>false</default>
+                <label>Fully Sponsored</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

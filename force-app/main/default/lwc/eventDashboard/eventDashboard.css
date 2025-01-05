@@ -1,0 +1,25 @@
+.slds-box{
+        border : 1px solid black;
+        padding: 1rem;
+        margin: 10px;
+        border-radius: 0.25rem;
+}
+
+.slds-m-bottom_small{
+       margin-bottom: 1rem;
+}
+
+.slds-m-around_medium {
+      margin: 1rem;
+}
+.sponsor-logo {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+      margin: 0 auto;
+      display: block;
+      border-radius: 6px;
+      background-color: #f3f3f3;
+      padding: 5px;
+  }
+  

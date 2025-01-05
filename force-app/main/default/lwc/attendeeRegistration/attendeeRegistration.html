@@ -1,0 +1,62 @@
+<template>
+    <lightning-card icon-name="utility:adduser" variant="base" title='Attendee Registration'>
+      
+      <div class="slds-p-around_medium">
+        <template if:true={isLoading}>
+          <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+      </template>
+      <lightning-combobox
+      name="event"
+      label="Select Event"
+      value={selectedEventId}
+      options={eventOptions}
+      onchange={handleEventChange}>
+  </lightning-combobox>
+
+  <lightning-input 
+      label="Attendee Name" 
+      value={attendeeName} 
+      onchange={handleNameChange} 
+      required>
+    </lightning-input>
+
+      <lightning-input 
+      label="Email Address" 
+      type="email"
+      value={attendeeEmail} 
+      onchange={handleEmailChange} 
+      required>
+    </lightning-input>
+    <lightning-input 
+      label="Company" 
+      type="text"
+      value={attendeeCompany} 
+      onchange={handleConpanyChange} 
+      >
+    </lightning-input>
+
+<lightning-combobox 
+    label="Attendee Type" 
+    options={attendeeTypeOptions} 
+    value={attendeeType} 
+    onchange={handleAttendeeTypeChange}
+    required>
+</lightning-combobox>
+
+    <lightning-combobox 
+                    label="Ticket Type" 
+                    options={ticketTypeOptions} 
+                    value={ticketType} 
+                    onchange={handleTicketTypeChange}>
+    </lightning-combobox>
+
+    <lightning-button 
+            label="Submit" 
+            variant="brand" 
+            onclick={handleSubmit}
+            class="slds-m-top_medium">
+</lightning-button>
+
+      </div>
+    </lightning-card>
+</template>

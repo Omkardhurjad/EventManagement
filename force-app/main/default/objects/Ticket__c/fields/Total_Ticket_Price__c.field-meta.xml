@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Ticket_Price__c</fullName>
+    <formula>CASE(
+  TEXT(Ticket_Type__c),
+&quot;General Admission&quot;, 500,
+&quot;VIP&quot;, 1500,
+&quot;Early Bird&quot;, 400,
+&quot;Group Discount&quot;, 200,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Ticket Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
